@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Adding and Subtracting Numbers - JavaScript</title>
+
+
+	<script>
+		function AddNumber(){
+			var firstNumber = parseFloat(document.form1.firstNumber.value);
+            var secondNumber = parseFloat(document.form1.secondNumber.value);
+            if (isNaN(firstNumber) || isNaN(secondNumber)) {
+                alert("Please enter valid numbers.");
+                return;
+            }
+            var result = firstNumber + secondNumber;
+            document.form1.results.value = result;
+		}
+		function SubtractNumber(){
+			var firstNumber = parseFloat(document.form1.firstNumber.value);
+            var secondNumber = parseFloat(document.form1.secondNumber.value);
+            if (isNaN(firstNumber) || isNaN(secondNumber)) {
+                alert("Please enter valid numbers.");
+                return;
+            }
+            var result = firstNumber - secondNumber;
+            document.form1.results.value = result;
+		}
+	</script>
+</head>
+<body style="padding: 30px; font-size:1.5em;">
+	<h2>Adding and Subtracting Numbers - JavaScript</h2>
+	<form name="form1">
+		<input type="text" name="firstNumber"> <br />
+		<input type="text" name="secondNumber"> <br />
+		<input type="button" value="Add" onclick="AddNumber()">
+		<input type="button" value="Subtract" onclick="SubtractNumber()">
+		<br />
+		<textarea name="results" rows="1" cols="50"></textarea>
+
+
+	</form>
+	<p></p>
+
+	
+
+</body>
+</html>

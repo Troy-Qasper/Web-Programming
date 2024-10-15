@@ -1,0 +1,21 @@
+[01-Apr-2024 11:55:54 UTC] PHP Parse error:  syntax error, unexpected integer "1", expecting variable or "{" or "$" in /home/bdo62o6crf13/public_html/students/snookpur/Assignment 9/assignment9-php.php on line 25
+[01-Apr-2024 11:56:07 UTC] PHP Parse error:  syntax error, unexpected integer "1", expecting variable or "{" or "$" in /home/bdo62o6crf13/public_html/students/snookpur/Assignment 9/assignment9-php.php on line 25
+[01-Apr-2024 11:56:39 UTC] PHP Parse error:  syntax error, unexpected integer "1", expecting variable or "{" or "$" in /home/bdo62o6crf13/public_html/students/snookpur/Assignment 9/assignment9-php.php on line 25
+[01-Apr-2024 11:56:42 UTC] PHP Parse error:  syntax error, unexpected integer "1", expecting variable or "{" or "$" in /home/bdo62o6crf13/public_html/students/snookpur/Assignment 9/assignment9-php.php on line 25
+[01-Apr-2024 11:56:44 UTC] PHP Parse error:  syntax error, unexpected integer "1", expecting variable or "{" or "$" in /home/bdo62o6crf13/public_html/students/snookpur/Assignment 9/assignment9-php.php on line 25
+[01-Apr-2024 11:57:09 UTC] PHP Parse error:  syntax error, unexpected integer "1", expecting variable or "{" or "$" in /home/bdo62o6crf13/public_html/students/snookpur/Assignment 9/assignment9-php.php on line 25
+[01-Apr-2024 11:58:02 UTC] PHP Parse error:  syntax error, unexpected integer "1", expecting variable or "{" or "$" in /home/bdo62o6crf13/public_html/students/snookpur/Assignment 9/assignment9-php.php on line 25
+[01-Apr-2024 11:59:57 UTC] PHP Parse error:  syntax error, unexpected integer "1", expecting variable or "{" or "$" in /home/bdo62o6crf13/public_html/students/snookpur/Assignment 9/assignment9-php.php on line 25
+[01-Apr-2024 12:00:24 UTC] PHP Parse error:  syntax error, unexpected integer "1", expecting variable or "{" or "$" in /home/bdo62o6crf13/public_html/students/snookpur/Assignment 9/assignment9-php.php on line 25
+[01-Apr-2024 12:00:27 UTC] PHP Parse error:  syntax error, unexpected integer "1", expecting variable or "{" or "$" in /home/bdo62o6crf13/public_html/students/snookpur/Assignment 9/assignment9-php.php on line 25
+[01-Apr-2024 12:01:52 UTC] PHP Parse error:  syntax error, unexpected variable "$tempStr" in /home/bdo62o6crf13/public_html/students/snookpur/Assignment 9/assignment9-php.php on line 37
+[01-Apr-2024 12:01:54 UTC] PHP Parse error:  syntax error, unexpected variable "$tempStr" in /home/bdo62o6crf13/public_html/students/snookpur/Assignment 9/assignment9-php.php on line 37
+[01-Apr-2024 12:02:20 UTC] PHP Parse error:  syntax error, unexpected variable "$tempStr" in /home/bdo62o6crf13/public_html/students/snookpur/Assignment 9/assignment9-php.php on line 37
+[01-Apr-2024 12:03:06 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string * int in /home/bdo62o6crf13/public_html/students/snookpur/Assignment 9/assignment9-php.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/bdo62o6crf13/public_html/students/snookpur/Assignment 9/assignment9-php.php on line 23
+[01-Apr-2024 12:03:08 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string * int in /home/bdo62o6crf13/public_html/students/snookpur/Assignment 9/assignment9-php.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/bdo62o6crf13/public_html/students/snookpur/Assignment 9/assignment9-php.php on line 23

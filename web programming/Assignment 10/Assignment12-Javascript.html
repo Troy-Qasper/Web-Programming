@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>>
+	<title> Education Math Game: (Javascript) </title>
+
+	<script>
+		function generateNumbers(){
+			if(form1.skill[0].checked){
+				LB = 1;
+				UB = 10;
+			}
+			else{
+				LB = -10;
+				UB = 10;
+			}
+			//Math.floor ((UB - LB + 1) * Math.random()) + LB;
+			form1.num1.value = Math.floor((UB - LB + 1) * Math.random()) + LB;
+			form1.num2.value = Math.floor((UB - LB + 1) * Math.random()) + LB;
+			form1.result.value = "";
+			form1.guess.value = "";
+		}
+		function verify(){
+			num1 = parseFloat(form1.num1.value);
+			num2 = parseFloat(form1.num2.value);
+			guess = parseFloat(form1.guess.value);
+			if(num1 + num2 == guess){
+				form1.result.value = "Correct";
+			}
+			else{
+				form1.result.value = "Incorrect"
+			}
+		}
+	</script>
+</head>
+
+<body>
+	<h3>Assignment 12</h3>
+	Education Math Game: (Javascript) <br>
+	Troy Snook-Purvis <br>
+	<br>
+
+	<div style="background: lightgray; width: 250px; padding: 20px;">
+	<form name="form1">
+		Skill level: <br />
+		&nbsp; &nbsp; <input type="radio" name="skill" value="beginner" checked> Beginner (1 to 10) <br />
+		&nbsp; &nbsp; <input type="radio" name="skill" value="advanced"> Advanced (-10 to 10) <br />
+		<br />
+		Number1: <input type="text" name="num1" size="5" value=""> <br /> + <br />
+		Number2: <input type="text" name="num2" size="5" value=""> <p></p>
+		Guess: <input type="text" name="guess" size="5" value="">
+		<input type="button" onclick="verify()" value="Verify" />
+		<p></p>
+		<input type="text" name="result" size="20" value="">
+	</form>
+
+</body>
+</html>

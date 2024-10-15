@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Changing Colors - JavaScript</title>
+
+
+	<script>
+		function changeFontGreen(){
+			document.getElementById("output").style.color = 'green';
+		}
+		function changeFontBlack(){
+			document.getElementById("output").style.color = 'black';
+		}
+	</script>
+</head>
+<body style="padding: 30px; font-size:1.5em;">
+	<form name="form1">
+		<input type="button" value="Green Text" onclick="changeFontGreen()">
+		<input type="button" value="Black Text" onclick="changeFontBlack()">
+
+
+	</form>
+	<p></p>
+
+	Some text.
+
+	<p id="output"><b>Northeastern State University</b></p>
+
+	More text.,
+
+</body>
+</html>

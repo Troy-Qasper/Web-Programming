@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Adding and Subtracting Numbers - jQuery</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	
+<script>
+	$(document).ready(function(){
+		$("#addButton").click(function(){
+			var firstNumber = parseFloat($("#firstNumber").val());
+			var secondNumber = parseFloat($("#secondNumber").val());
+			if (isNaN(firstNumber) || isNaN(secondNumber)) {
+                alert("Please enter valid numbers.");
+                return;
+            }
+			var result = firstNumber + secondNumber;
+			$("#results").val(result);
+		});
+
+		$("#subtractButton").click(function(){
+			var firstNumber = parseFloat($("#firstNumber").val());
+			var secondNumber = parseFloat($("#secondNumber").val());
+			if (isNaN(firstNumber) || isNaN(secondNumber)) {
+                alert("Please enter valid numbers.");
+                return;
+            }
+			var result = firstNumber - secondNumber;
+			$("#results").val(result);
+		});
+
+	});
+</script>
+<body style="padding: 30px; font-size: 1.5em;">
+	<h2>Adding and Subtracting Numbers - JavaScript</h2>
+	<form name="form1">
+		<input type="text" id="firstNumber"> <br />
+		<input type="text" id="secondNumber"> <br />
+		<br />
+		<input type="button" id="addButton" style="background-color: lightgray; color: green; padding: 2px; border: 3px solid black;" value="Add">
+		<input type="button" id="subtractButton" style="background-color: lightgray; color: black; padding: 2px; border: 3px solid black;" value="Subtract">
+		<br />
+		<br />
+		<textarea id="results" rows="1" cols="50"></textarea>
+	</form>
+</body>
+</html>

@@ -1,0 +1,35 @@
+body{
+	padding: 30px; 
+	font-size: 1.2em;
+}
+h1{
+	background-color: teal;
+	padding: 10px; 
+	color: black; 
+	text-align: center;
+}
+h2{
+	background-color: blueviolet;
+	padding: 10px; 
+	color: orange; 
+	text-align: center;
+}
+div{
+	width: 700px; 
+	background-color: orangered; 
+	padding: 10px; 
+	margin: 0 0 10px 0;
+}
+.ex1{
+	background-color: pink;
+}
+.ex2{
+	background-color: blue;
+}
+a {
+	text-decoration: none; 
+	background-color:green; 
+	color: white; 
+	padding: 5px; 
+	border-radius: 5px;
+}

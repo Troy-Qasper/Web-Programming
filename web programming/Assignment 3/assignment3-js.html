@@ -1,0 +1,126 @@
+<html>
+<head>
+
+<title> Health Club (Javascript) </title>
+
+<script>
+function calculate() {
+	var totalCost, tennis, racquetball, golf, newCharges, tax;
+	var additional = document.forms["form1"].additional;
+	totalCost = 0;
+	tennis = 15;
+	racquetball = 20;
+	golf = 25;
+	newCharges = 0;
+
+
+	tax = parseFloat(document.form1.tax.value);
+
+	if(form1.membership[0].checked) 
+		totalCost = 80;
+	if(form1.membership[1].checked)
+		totalCost = 100;
+	if(form1.membership[2].checked)
+		totalCost = 120;
+
+	if(form1.tennis.checked)
+		totalCost = totalCost + tennis;
+	if(form1.racquetball.checked)
+		totalCost = totalCost + racquetball;
+	if(form1.golf.checked)
+		totalCost = totalCost + golf;
+
+	for(var i = 0; i < additional.length; i++) {
+		if(additional[i].checked) {
+			newCharges = newCharges + parseFloat(additional[i].value);
+		}
+	}
+	
+	totalCost = totalCost + newCharges;
+	totalCost = totalCost + (totalCost * tax);
+	totalCost = Math.round(totalCost * 100)/100;
+	totalCost = totalCost.toFixed(2);
+	totalCost = "$" + totalCost;
+	document.form1.total.value = totalCost;
+
+}
+
+function clearValues() {
+	var additional = document.forms["form1"].additional;
+
+	document.form1.total.value = "";
+	document.form1.tax.value = "0";
+	document.form1.tennis.checked = false;
+	document.form1.racquetball.checked = false;
+	document.form1.golf.checked = false;
+	document.
+
+	for(var i = 0; i < additional.length; i++) {
+		if(additional[i].checked)
+			additional[i].checked = false;
+	}
+}
+
+</script>
+</head>
+
+<body>
+<h2> Health Club (Javascript) </h2>
+Troy Snook-Purvis <p>
+
+<form name="form1" id="form1">
+	<div style="float: left; width: 130px; background-color: pink;">
+		<dl>
+			<dt> Membership </dt>
+			<dt><input type="radio" onchange="calculate()" name="membership" value="Basic"> Basic </dt>
+			<dt><input type="radio" onchange="calculate()" name="membership" value="Gold"> Gold </dt>
+			<dt><input type="radio" onchange="calculate()" name="membership" value="GoldPlus" checked> Gold Plus </dt>
+		</dl>
+	</div>
+
+	<div style="float: left; width: 180px; background-color: yellow;">
+		<dl>
+			<dt> Additional Charges (1) </dt>
+			<dt><input type="checkbox" onchange="calculate()" name="tennis"> Tennis </dt>
+			<dt><input type="checkbox" onchange="calculate()" name="racquetball"> Racquet-Ball </dt>
+			<dt><input type="checkbox" onchange="calculate()" name="golf"> Golf </dt>
+		</dl>
+	</div>
+
+	<div style="float: left; width: 150px; background-color: lightblue;">
+		<dl>
+			<dt> Additional Charges (2) </dt>
+			<dt><input type="checkbox" onchange="calculate()" name="additional" value="100"> Child Care </dt>
+			<dt><input type="checkbox" onchange="calculate()" name="additional" value="120"> Personal Trainer </dt>
+			<dt><input type="checkbox" onchange="calculate()" name="additional" value="20"> Swimming Pool </dt>
+		</dl>
+	</div>
+
+	<div style="clear: both">&nbsp;
+	</div>
+
+	<div style="float: left; width: 150px; background-color: lightcoral;">
+		<dl>
+			<dt>
+				<input type="button" onclick="calculate()" value="Calculate Total">
+			</dt>
+			<dt>
+				<input type="button" onclick="clearValues()" value="Clear">
+			</dt>
+		</dl>
+	</div>
+
+	<div style="float: left; background-color: lightgreen;">
+		<dl>
+			<dt>
+				Tax: <input type="text" name="tax" onchange="calculate()" value="0" size="10">
+			</dt>
+			<dt>
+				Total: <input type="text" name="total" size="10">
+			</dt>
+		</dl>
+	</div>
+</form>
+
+</body>
+</html>

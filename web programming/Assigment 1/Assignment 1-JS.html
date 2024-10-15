@@ -1,0 +1,22 @@
+<script>
+function computeAnswer() {
+	var number1, number2;
+	number1 = parseFloat(document.form1.number1.value);
+	number2 = parseFloat(document.form1.number2.value);
+	document.form1.result.value = number1 + number2;
+
+}
+
+</script>
+
+<h2> JavaScript Calculator </h2>
+Troy Snook-Purvis <p>
+
+<form name="form1">
+Number 1: <input type="text" name="number1" value=""> <p>
+Number 2: <input type="text" name="number2" value=""> <p>
+<input type="button" value="Calculate Total"
+	onclick="computeAnswer()"> <p>
+Total: <input type="text" name="result"> <p>
+
+</form>

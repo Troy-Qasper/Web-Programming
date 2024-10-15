@@ -1,0 +1,52 @@
+<html>
+<head>
+<script>
+function computeGrade() {
+	var exam1, exam2;
+	exam1 = parseFloat(document.form1.exam1.value);
+	exam2 = parseFloat(document.form1.exam2.value);
+	grade = "";
+	average = (exam1 + exam2) / 2;
+	average = Math.round(average * 100) / 100;
+
+	if(average >= 70)
+		document.form1.status.value = "PASSING";
+	else
+		document.form1.status.value = "FAILING";
+	if(average >= 90)
+		grade = "A";
+	else if(average >= 80)
+		grade = "B";
+	else if(average >= 70)
+		grade = "C";
+	else if(average >= 60)
+		grade = "D";
+	else
+		grade = "F";
+	
+	document.form1.grade.value = grade;
+	document.form1.average.value = average;
+	
+
+}
+</script>
+
+</head>
+<body>
+<h1> Grade Calculator (JavaScript) </h1>
+Troy Snook-Purvis <p>
+
+
+<form name="form1">
+Exam 1: <input type="text" name="exam1" size="5" value="80"> <p>
+Exam 2: <input type="text" name="exam2" size="5" value="82"> <p>
+<input type="button" value="Calculate Grade"
+	onclick="computeGrade()"> <p>
+Average: <input type="text" name="average" size="5"> <p>
+Status: <input type="text" name="status" size="5"> <p>
+Grade: <input type="text" name="grade" size="5"> <p>
+</form>
+
+
+</body>
+</html>

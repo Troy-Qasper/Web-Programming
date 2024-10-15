@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vowel Counter (Javascript)</title>
+
+	<script>
+		function countCharacters(char){
+			phrase = form1.phrase.value;
+			phrase = phrase.toUpperCase();
+			counter = 0;
+			index = 0;
+			do{
+				charPosition = phrase.indexOf(char, index);
+				if(charPosition == -1){
+					index = phrase.length + 1;
+				}
+				else{
+					counter = counter + 1;
+					index = charPosition + 1;
+				}
+			}while (index <= phrase.length)
+			return counter;
+		}
+		function countVowels(){
+			numA = countCharacters("A");
+			numE = countCharacters("E");
+			numI = countCharacters("I");
+			numO = countCharacters("O");
+			numU = countCharacters("U");
+			numVowels = numA + numE + numI + numO + numU;
+			tempStr = "It contains " + numVowels + " vowels.\n\n";
+			form1.results.value = tempStr;
+			
+		}
+	</script>
+</head>
+<body>
+	<h3>Vowel Counter (Javascript)</h3>
+	Troy Snook-Purvis
+	<p></p>
+	<form name="form1">
+		Phrase: <br>
+		<textarea name="phrase" rows="5" cols="40">Today is Wednesday.</textarea>
+		<p></p>
+		<input type="button" onclick="countVowels()" value="Count Vowels">
+		<p></p>
+		Results: <br>
+		<textarea name="results" rows="2" cols="40"></textarea>
+	</form>
+
+</body>
+</html>
